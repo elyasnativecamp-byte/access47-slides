@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Access 47 · Investor Pitch · Slides</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f0f3f7;
+      font-family: 'Inter', 'Segoe UI', Roboto, system-ui, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    .slider-container {
+      max-width: 1100px;
+      width: 100%;
+    }
+
+    .slide {
+      background: #ffffff;
+      border-radius: 2.5rem;
+      box-shadow: 0 20px 35px -8px rgba(0, 20, 40, 0.2), 0 8px 18px -6px rgba(0, 0, 0, 0.1);
+      padding: 2.8rem 3rem;
+      margin-bottom: 2.8rem;
+      transition: all 0.1s ease;
+      border: 1px solid #e9edf4;
+    }
+
+    /* question slide distinct */
+    .slide.question {
+      background: linear-gradient(145deg, #ffffff 0%, #f9fcff 100%);
+      border-left: 10px solid #0a4b8c;
+    }
+
+    .slide.answer {
+      background: #ffffff;
+      border-left: 10px solid #1e7e5c;
+    }
+
+    .slide-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .slide-number {
+      background: #0a2e4e;
+      color: white;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 0.3rem 1rem;
+      border-radius: 40px;
+      letter-spacing: 0.5px;
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .slide.answer .slide-number {
+      background: #0d4a3a;
+    }
+
+    .slide-tag {
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #5e6f8d;
+      background: #eef2f8;
+      padding: 0.3rem 1.2rem;
+      border-radius: 30px;
+    }
+
+    .question-text {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #0b2a44;
+      margin-top: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .answer-text {
+      font-size: 1.35rem;
+      line-height: 1.6;
+      color: #1e2e42;
+      margin-bottom: 2rem;
+      background: #f6faff;
+      padding: 1.8rem 2rem;
+      border-radius: 1.8rem;
+      border: 1px solid #d9e3f0;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    .phrase-section {
+      margin-top: 1rem;
+      border-top: 2px dashed #cfddee;
+      padding-top: 1.8rem;
+    }
+
+    .phrase-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #2d4b6e;
+      margin-bottom: 1.2rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .phrase-title span {
+      background: #1e7e5c;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .phrase-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.85rem;
+    }
+
+    .phrase-pill {
+      background: #edf4ff;
+      border: 1px solid #bdd0e8;
+      border-radius: 50px;
+      padding: 0.65rem 1.5rem;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: #13324b;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+      transition: 0.1s;
+      line-height: 1.4;
+    }
+
+    .phrase-pill:hover {
+      background: #e2edff;
+    }
+
+    /* subtle accent for answer */
+    .slide.answer .answer-text strong {
+      color: #0a4b8c;
+      font-weight: 700;
+    }
+
+    /* consistent spacing */
+    .slide:last-child {
+      margin-bottom: 0;
+    }
+
+    /* responsive */
+    @media (max-width: 750px) {
+      .slide {
+        padding: 2rem 1.5rem;
+        border-radius: 1.8rem;
+      }
+      .question-text {
+        font-size: 1.55rem;
+      }
+      .answer-text {
+        font-size: 1.1rem;
+        padding: 1.4rem;
+      }
+      .phrase-pill {
+        font-size: 1rem;
+        padding: 0.5rem 1.2rem;
+      }
+    }
+
+    /* make text selection easy */
+    ::selection {
+      background: #b4d0f0;
+      color: #0a2e4e;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <!-- Q1 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q1</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What is the investment opportunity behind Access 47?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A1</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Access 47 is an opportunity to address a very common problem: people are managing increasingly complex lives through fragmented tools. We have calendars, task managers, notes, habit trackers, reminder systems, and other specialized applications, but our lives don't operate in those separate categories.<br><br>
+        Access 47 brings <strong>Missions, Priorities, deadlines, AI-powered strategy, visualization, habits, self-care, collaboration, and progress tracking</strong> into one unified platform.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">fragmented tools</div>
+          <div class="phrase-pill">increasingly complex lives</div>
+          <div class="phrase-pill">unified platform</div>
+          <div class="phrase-pill">AI-powered strategy</div>
+          <div class="phrase-pill">Missions & Priorities</div>
+          <div class="phrase-pill">progress tracking</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q2</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What specific problem does Access 47 solve that current tools don't?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A2</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Current tools are excellent at <strong>one thing</strong> — a calendar for time, a to-do list for tasks, a notes app for ideas. But life doesn't happen in silos. When a deadline shifts, your habits, priorities, and self-care routines should adapt. Access 47 solves the <strong>integration gap</strong>: it connects mission-level goals with daily actions, automatically re-prioritizes when things change, and uses AI to suggest adjustments. No more juggling ten apps and losing the big picture.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">integration gap</div>
+          <div class="phrase-pill">mission-level goals</div>
+          <div class="phrase-pill">automatically re-prioritizes</div>
+          <div class="phrase-pill">silos</div>
+          <div class="phrase-pill">big picture</div>
+          <div class="phrase-pill">daily actions</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q3</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">Who is the ideal customer for Access 47?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A3</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Our primary users are <strong>high-agency individuals</strong> — founders, creatives, consultants, and knowledge workers who already use 3+ productivity tools. They're overwhelmed by fragmentation and are actively looking for a <strong>single source of truth</strong>. Secondary: small teams that need shared missions and transparent progress. We're not building for casual users; we're building for people whose livelihood depends on <strong>clarity and execution</strong>.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">high-agency individuals</div>
+          <div class="phrase-pill">single source of truth</div>
+          <div class="phrase-pill">clarity and execution</div>
+          <div class="phrase-pill">knowledge workers</div>
+          <div class="phrase-pill">shared missions</div>
+          <div class="phrase-pill">overwhelmed by fragmentation</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q4</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">How does Access 47 make money?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A4</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We use a <strong>freemium SaaS model</strong>. The core experience — missions, priorities, habits — is free forever. <strong>Access 47 Pro</strong> unlocks AI strategy, advanced visualization, unlimited collaboration, and deep integrations for $20/month. We also offer a <strong>team tier</strong> at $12/user/month for shared missions and analytics. Long-term, we see an <strong>API and marketplace</strong> for third-party mission templates as a revenue stream.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">freemium SaaS</div>
+          <div class="phrase-pill">Access 47 Pro</div>
+          <div class="phrase-pill">team tier</div>
+          <div class="phrase-pill">API and marketplace</div>
+          <div class="phrase-pill">mission templates</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q5</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What traction do you have so far?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A5</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We launched our private beta six months ago and have <strong>2,300 active users</strong> with a 42% weekly retention rate. Our NPS is 68. We've grown <strong>entirely through word-of-mouth</strong> — no paid acquisition. Monthly recurring revenue is $12K from early adopters, and we have a waiting list of 5,000. Most importantly, users tell us they've <strong>cancelled 2–3 other subscriptions</strong> after switching to Access 47.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">private beta</div>
+          <div class="phrase-pill">weekly retention</div>
+          <div class="phrase-pill">NPS 68</div>
+          <div class="phrase-pill">word-of-mouth</div>
+          <div class="phrase-pill">cancelled subscriptions</div>
+          <div class="phrase-pill">MRR $12K</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q6</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What is your go-to-market strategy?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A6</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We're focusing on <strong>community-led growth</strong>. First, we'll partner with productivity creators and niche communities (Indie Hackers, r/productivity, design-focused newsletters). Second, we'll launch a <strong>referral program</strong> that gives Pro months for invites. Third, we'll invest in SEO around "mission-based planning" and "unified life OS". Our CAC is currently under $18, and we plan to keep it low by letting the product speak for itself.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">community-led growth</div>
+          <div class="phrase-pill">productivity creators</div>
+          <div class="phrase-pill">referral program</div>
+          <div class="phrase-pill">mission-based planning</div>
+          <div class="phrase-pill">low CAC</div>
+          <div class="phrase-pill">unified life OS</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q7</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">Who are your main competitors, and how are you different?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A7</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Notion, ClickUp, and Motion are the closest. Notion is a <strong>flexible canvas</strong> but doesn't guide execution. ClickUp is feature-bloated and team-first. Motion automates calendar scheduling but lacks mission-level strategy. Access 47 is the only platform that <strong>connects long-term missions to daily habits</strong> and uses AI to keep everything aligned. We're not a tool — we're a <strong>life operating system</strong>.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">flexible canvas</div>
+          <div class="phrase-pill">mission-level strategy</div>
+          <div class="phrase-pill">life operating system</div>
+          <div class="phrase-pill">feature-bloated</div>
+          <div class="phrase-pill">connects missions to habits</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q8</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What is your technology moat?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A8</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Our moat is <strong>threefold</strong>: first, our <strong>AI prioritization engine</strong> learns individual work patterns and improves with usage. Second, the <strong>mission graph</strong> — a proprietary data structure that links goals, tasks, habits, and deadlines — becomes more valuable over time. Third, we're building a <strong>template marketplace</strong> where top creators publish missions, creating network effects. Data + habit + community = high switching costs.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">AI prioritization engine</div>
+          <div class="phrase-pill">mission graph</div>
+          <div class="phrase-pill">template marketplace</div>
+          <div class="phrase-pill">network effects</div>
+          <div class="phrase-pill">high switching costs</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q9</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">How big is the market opportunity?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A9</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        The productivity software market is $96B and growing 14% annually. Our <strong>serviceable addressable market</strong> — professionals and small teams using multiple tools — is $22B. We're targeting the <strong>premium segment</strong> that already pays for 2+ subscriptions. With 1M users at $20/month, that's $240M ARR. And we're expanding into <strong>AI coaching and wellness</strong>, which adds another $30B.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">$96B market</div>
+          <div class="phrase-pill">serviceable addressable market</div>
+          <div class="phrase-pill">premium segment</div>
+          <div class="phrase-pill">AI coaching</div>
+          <div class="phrase-pill">1M users</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q10</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What does your team look like?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A10</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We're a team of <strong>four</strong>: two technical co-founders (ex-Google and ex-Asana), a product designer from IDEO, and a growth lead who scaled a previous SaaS to 100K users. We've worked together for 18 months and have <strong>complementary skills</strong> — AI, product, design, and community. We're advised by the former VP of Product at Notion.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">complementary skills</div>
+          <div class="phrase-pill">ex-Google / ex-Asana</div>
+          <div class="phrase-pill">scaled SaaS</div>
+          <div class="phrase-pill">advised by Notion VP</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q11 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q11</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">How much are you raising, and what will you use it for?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A11</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We're raising a <strong>$2.5M seed round</strong>. 40% goes to engineering (AI and integrations), 30% to growth (community and content), 20% to design and UX, and 10% to operations. This will get us to <strong>20,000 paying users</strong> and $4M ARR in 18 months. We have $500K committed from angel investors already.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">$2.5M seed</div>
+          <div class="phrase-pill">40% engineering</div>
+          <div class="phrase-pill">$4M ARR</div>
+          <div class="phrase-pill">20,000 paying users</div>
+          <div class="phrase-pill">committed angel</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q12 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q12</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What are the biggest risks, and how do you mitigate them?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A12</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Main risk: <strong>feature parity</strong> from big players. Mitigation: we go deeper on mission-level AI, which is hard to copy. Second risk: <strong>user retention</strong> if onboarding is complex. We've built a <strong>guided setup</strong> that gets users to value in under 5 minutes. Third risk: <strong>market education</strong> — we're creating a new category, so we invest in content and community to define the narrative.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">feature parity</div>
+          <div class="phrase-pill">mission-level AI</div>
+          <div class="phrase-pill">guided setup</div>
+          <div class="phrase-pill">market education</div>
+          <div class="phrase-pill">define the narrative</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q13 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q13</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">How do you acquire users at scale?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A13</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Three channels: <strong>1) content and SEO</strong> — we'll rank for "mission planning" and "life OS" keywords. <strong>2) partnerships</strong> with productivity YouTubers and newsletter writers (we pay for performance). <strong>3) product-led virality</strong> — shared missions and collaborative features naturally invite others. Our referral loop is already 0.4 invites per user, and we expect to increase that with incentives.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">content and SEO</div>
+          <div class="phrase-pill">product-led virality</div>
+          <div class="phrase-pill">referral loop</div>
+          <div class="phrase-pill">shared missions</div>
+          <div class="phrase-pill">partnerships</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q14 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q14</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What is your pricing strategy, and why?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A14</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We <strong>anchor high with Pro</strong> at $20/month to signal premium value, but keep a generous free tier to drive adoption. We tested $15 and $25; $20 had the highest conversion-to-LTV ratio. We also offer <strong>annual plans at a 20% discount</strong>. For teams, we price per seat but cap at $12/user to encourage small team adoption. The goal is to make Pro a no-brainer for anyone serious about their goals.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">anchor high</div>
+          <div class="phrase-pill">generous free tier</div>
+          <div class="phrase-pill">conversion-to-LTV</div>
+          <div class="phrase-pill">annual discount</div>
+          <div class="phrase-pill">no-brainer</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q15 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q15</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What are the unit economics?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A15</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Our <strong>CAC is $18</strong> (blended), and <strong>LTV is $240</strong> (12-month retention at 80%). That's a 13:1 LTV:CAC ratio. Gross margin is 82% after cloud and AI costs. Payback period is under 2 months. As we scale, we expect CAC to drop due to organic and referral, while LTV increases as users adopt more Pro features.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">CAC $18</div>
+          <div class="phrase-pill">LTV $240</div>
+          <div class="phrase-pill">LTV:CAC 13:1</div>
+          <div class="phrase-pill">payback under 2 months</div>
+          <div class="phrase-pill">gross margin 82%</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q16 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q16</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">How do you plan to retain users long-term?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A16</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Retention comes from <strong>habit formation and data gravity</strong>. The more missions, habits, and history you build in Access 47, the more valuable it becomes. We also add <strong>weekly AI reviews</strong> that summarize progress and suggest adjustments, creating a recurring engagement loop. And our <strong>collaboration features</strong> make it sticky for teams. Our goal is to become the <strong>default daily dashboard</strong>.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">habit formation</div>
+          <div class="phrase-pill">data gravity</div>
+          <div class="phrase-pill">weekly AI reviews</div>
+          <div class="phrase-pill">default daily dashboard</div>
+          <div class="phrase-pill">engagement loop</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q17 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q17</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What have you learned from your beta users?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A17</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Three key insights: <strong>1) Users want guidance, not just tools</strong> — they love AI suggestions. <strong>2) Visual progress matters</strong> — our mission map is the most-used feature. <strong>3) People are overwhelmed by setup</strong>, so we simplified onboarding and saw a 30% increase in week-1 retention. These learnings directly shape our roadmap.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">guidance, not just tools</div>
+          <div class="phrase-pill">visual progress</div>
+          <div class="phrase-pill">mission map</div>
+          <div class="phrase-pill">simplified onboarding</div>
+          <div class="phrase-pill">week-1 retention</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q18 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q18</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">How do you handle data privacy and security?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A18</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We're <strong>GDPR and CCPA compliant</strong>, with end-to-end encryption for personal data. AI processing happens on anonymized data, and users can opt out of AI training. We never sell data. For enterprise, we offer SSO and audit logs. Security is a <strong>feature, not an afterthought</strong> — especially for high-profile users.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">GDPR & CCPA</div>
+          <div class="phrase-pill">end-to-end encryption</div>
+          <div class="phrase-pill">anonymized data</div>
+          <div class="phrase-pill">SSO & audit logs</div>
+          <div class="phrase-pill">security as a feature</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q19 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q19</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What is your long-term vision for Access 47?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A19</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        To become the <strong>operating system for intentional living</strong>. Today it's productivity; tomorrow it's <strong>life strategy</strong> — helping people align daily actions with their deepest goals, health, relationships, and purpose. We see Access 47 as the layer that connects all aspects of a well-lived life, with AI as a coach and community as support.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">operating system for intentional living</div>
+          <div class="phrase-pill">life strategy</div>
+          <div class="phrase-pill">deepest goals</div>
+          <div class="phrase-pill">AI as a coach</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q20 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q20</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">Why now? Why is this the right timing?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A20</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Three converging trends: <strong>1) AI is finally good enough</strong> to provide personalized strategy. <strong>2) Remote/hybrid work</strong> has blurred the lines between work and life, increasing demand for integrated tools. <strong>3) Tool fatigue</strong> is peaking — people are actively seeking consolidation. We're riding all three.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">AI good enough</div>
+          <div class="phrase-pill">remote/hybrid work</div>
+          <div class="phrase-pill">tool fatigue</div>
+          <div class="phrase-pill">consolidation</div>
+          <div class="phrase-pill">converging trends</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q21 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q21</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">How do you measure success?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A21</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We track <strong>weekly active missions</strong> (WAM) — how many missions are actively worked on. Secondary: retention (4-week, 12-week), NPS, and Pro conversion. Our north star is <strong>missions completed per user per month</strong>. If that grows, everything else follows: retention, referrals, and revenue.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">weekly active missions</div>
+          <div class="phrase-pill">north star metric</div>
+          <div class="phrase-pill">missions completed per user</div>
+          <div class="phrase-pill">Pro conversion</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q22 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q22</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What are your biggest challenges ahead?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A22</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        <strong>1) Scaling the AI</strong> — personalization at scale is computationally expensive. We're optimizing with smaller models. <strong>2) Category creation</strong> — we need to educate the market on "mission-based productivity". <strong>3) Hiring</strong> — finding senior AI engineers who share our vision. We're addressing all three with our raise.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">scaling AI</div>
+          <div class="phrase-pill">category creation</div>
+          <div class="phrase-pill">mission-based productivity</div>
+          <div class="phrase-pill">hiring AI engineers</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q23 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q23</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">How do you plan to expand internationally?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A23</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We'll start with <strong>English-speaking markets</strong> (US, UK, Canada, Australia) since our beta is already there. Then we'll localize for <strong>Western Europe and India</strong> in year two, with language support and region-specific mission templates. Our architecture is built for <strong>localization from day one</strong>.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">English-speaking markets</div>
+          <div class="phrase-pill">localization</div>
+          <div class="phrase-pill">region-specific templates</div>
+          <div class="phrase-pill">built for localization</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q24 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q24</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What is your exit strategy?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A24</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We're building for the long term, but the most likely outcomes are <strong>acquisition by a major productivity player</strong> (Microsoft, Google, Notion) or a <strong>successful IPO</strong> if we become the category leader. Our mission graph and AI engine would be valuable to any company wanting to own the "life OS" space.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">acquisition</div>
+          <div class="phrase-pill">category leader</div>
+          <div class="phrase-pill">mission graph value</div>
+          <div class="phrase-pill">life OS space</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q25 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q25</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What makes you uniquely qualified to build this?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A25</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We've <strong>lived this problem</strong>. Our founder was a product lead at Asana and struggled with fragmented tools. Our CTO built recommendation systems at Google. We've been using our own product for two years and can't imagine going back. We're not just building a company — we're building the tool we desperately needed.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">lived this problem</div>
+          <div class="phrase-pill">ex-Asana product lead</div>
+          <div class="phrase-pill">recommendation systems</div>
+          <div class="phrase-pill">tool we needed</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q26 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q26</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">How do you incorporate user feedback?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A26</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We have a <strong>public roadmap</strong> and a community forum where users vote on features. Every week we release a <strong>feedback digest</strong> and ship small improvements. Our beta users are our co-creators — many of them are now advisors. This tight loop keeps us aligned with real needs, not assumptions.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">public roadmap</div>
+          <div class="phrase-pill">community forum</div>
+          <div class="phrase-pill">feedback digest</div>
+          <div class="phrase-pill">co-creators</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q27 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q27</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What are your plans for AI development?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A27</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        We're building a <strong>proprietary AI coach</strong> that learns from your mission history to predict bottlenecks, suggest priority shifts, and even auto-schedule deep work. We're using <strong>fine-tuned small language models</strong> for cost efficiency, and we plan to add multi-modal input (voice, sketches) in the next 12 months. AI is our core differentiator, not a bolt-on.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">proprietary AI coach</div>
+          <div class="phrase-pill">predict bottlenecks</div>
+          <div class="phrase-pill">fine-tuned small models</div>
+          <div class="phrase-pill">multi-modal input</div>
+          <div class="phrase-pill">core differentiator</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q28 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q28</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What is the biggest misconception about Access 47?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A28</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        That it's just another to-do app. Access 47 is <strong>not a task manager</strong> — it's a strategic layer on top of everything. We don't replace your calendar or notes; we connect them. The real value is <strong>alignment</strong>: making sure your daily actions move you toward what matters most.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">not a task manager</div>
+          <div class="phrase-pill">strategic layer</div>
+          <div class="phrase-pill">alignment</div>
+          <div class="phrase-pill">what matters most</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q29 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q29</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">How do you build a moat over time?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A29</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        Our moat deepens with <strong>data, community, and AI</strong>. Every mission completed improves our AI recommendations. Every template shared grows the marketplace. Every team that adopts creates switching costs. Over time, Access 47 becomes the <strong>system of record for personal and team execution</strong> — very hard to displace.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">data network effect</div>
+          <div class="phrase-pill">template marketplace</div>
+          <div class="phrase-pill">switching costs</div>
+          <div class="phrase-pill">system of record</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Q30 -->
+    <div class="slide question">
+      <div class="slide-header">
+        <div class="slide-number">Q30</div>
+        <div class="slide-tag">Investor Pitch</div>
+      </div>
+      <div class="question-text">What do you want the investor to take away?</div>
+    </div>
+
+    <div class="slide answer">
+      <div class="slide-header">
+        <div class="slide-number">A30</div>
+        <div class="slide-tag">Sample answer + phrases</div>
+      </div>
+      <div class="answer-text">
+        That Access 47 is <strong>the missing layer in personal productivity</strong> — a huge, underserved market. We have a clear problem, a differentiated product, early traction, and a team that can execute. This is a chance to invest in the <strong>operating system for intentional living</strong> before it becomes obvious.
+      </div>
+      <div class="phrase-section">
+        <div class="phrase-title"><span></span> Key phrases</div>
+        <div class="phrase-grid">
+          <div class="phrase-pill">missing layer</div>
+          <div class="phrase-pill">underserved market</div>
+          <div class="phrase-pill">differentiated product</div>
+          <div class="phrase-pill">team that executes</div>
+          <div class="phrase-pill">intentional living</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
